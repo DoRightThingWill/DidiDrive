@@ -123,7 +123,11 @@ String decryptedPassword = encryptionService.decryptValue(encryptedPassword, enc
 
 You aren't required to understand hashing or encryption and that's why your tech lead provided these code samples for you. If you're curious and want to learn a little more, you can do a quick Google search or follow the links below:
 
+## Credit to this tutorial video: 
+https://www.youtube.com/watch?v=hHLxdUNn-Dg 
+
 [Hash Function](https://en.wikipedia.org/wiki/Hash_function)
 [Encryption](https://en.wikipedia.org/wiki/Encryption)
+
 
 All of us here at Super*Duper*Drive wish you good luck with the project!
