@@ -21,20 +21,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    protected void configure(AuthenticationManagerBuilder auth) {
+        System.out.println("authentication running here");
         auth.authenticationProvider(this.authenticationService);
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/signup","login").permitAll()
+//                .antMatchers("/signup","/login").permitAll()
+                // for all files in /css and /js need to permit all users to access
+                // otherwise, the style template can not be applied
+                .antMatchers("/signup", "/css/**", "/js/**").permitAll()
                 .anyRequest().authenticated();
 
         http.formLogin()
                 .loginPage("/login")
-                .permitAll()
-                .defaultSuccessUrl("/home");
+                .permitAll();
+
+        http.formLogin()
+                .defaultSuccessUrl("/home",true);
 
         http.logout().permitAll();
 
