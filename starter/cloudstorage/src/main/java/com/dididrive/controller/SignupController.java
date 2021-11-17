@@ -1,8 +1,8 @@
-package com.superdrive.controller;
+package com.dididrive.controller;
 
 
-import com.superdrive.entity.User;
-import com.superdrive.services.UserService;
+import com.dididrive.entity.User;
+import com.dididrive.services.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.superdrive.storage;
+package com.dididrive.storage;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

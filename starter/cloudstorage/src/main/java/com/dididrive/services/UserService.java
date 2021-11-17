@@ -1,8 +1,8 @@
-package com.superdrive.services;
+package com.dididrive.services;
 
 
-import com.superdrive.entity.User;
-import com.superdrive.mapper.UserMapper;
+import com.dididrive.entity.User;
+import com.dididrive.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;

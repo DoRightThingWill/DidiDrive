@@ -1,9 +1,9 @@
-package com.superdrive.controller;
+package com.dididrive.controller;
 
 
-import com.superdrive.storage.InputFile;
-import com.superdrive.storage.StorageFileNotFoundException;
-import com.superdrive.storage.StorageService;
+import com.dididrive.storage.InputFile;
+import com.dididrive.storage.StorageFileNotFoundException;
+import com.dididrive.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -12,12 +12,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 @Controller
 public class FileUploadController {

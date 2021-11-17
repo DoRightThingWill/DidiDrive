@@ -1,7 +1,7 @@
-package com.superdrive.config;
+package com.dididrive.config;
 
 
-import com.superdrive.services.AuthenticationService;
+import com.dididrive.services.AuthenticationService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

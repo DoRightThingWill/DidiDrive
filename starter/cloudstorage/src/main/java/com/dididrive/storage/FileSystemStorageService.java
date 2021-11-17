@@ -1,6 +1,6 @@
-package com.superdrive.storage;
+package com.dididrive.storage;
 
-import com.superdrive.controller.FileUploadController;
+import com.dididrive.controller.FileUploadController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -56,9 +56,25 @@ public class FileSystemStorageService implements StorageService {
 	@Override
 	public Stream<Path> loadAll() {
 		try {
+
+			System.out.println("hello");
+
+			// double colon operator ::
+			// class::method, direct reference to the method
+			// system.out.printl(AB) === system.out::printl
 			return Files.walk(this.rootLocation, 1)
 				.filter(path -> !path.equals(this.rootLocation))
 				.map(this.rootLocation::relativize);
+
+
+			// map vs foreach
+			// map, return the new collection or stream. purpose is to transform elements
+			// foreach, does not return anything, just execute the operation.
+
+			// difference between map and foreach
+			// difference between data collections and data stream
+			// collection focus on data storage, support add, delete, this kind of basic operation
+			// stream focus on complex data processing, like filter, map, foreach, match, etc.
 		}
 		catch (IOException e) {
 			throw new StorageException("Failed to read stored files", e);

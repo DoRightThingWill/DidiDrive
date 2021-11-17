@@ -1,6 +1,6 @@
-package com.superdrive;
+package com.dididrive;
 
-import com.superdrive.storage.StorageService;
+import com.dididrive.storage.StorageService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

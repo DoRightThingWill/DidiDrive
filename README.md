@@ -1,5 +1,5 @@
-# SuperDrive Cloud Storage
-A semi-commercial cloud storage product. Different from Google Drive and Dropbox, SuperDrive is featured by personal information management, and the minimum viable product includes three user-facing features:
+# DidiDrive Cloud Storage
+A semi-commercial cloud storage product. Different from Google Drive and Dropbox, DidiDrive is featured by personal information management, and the minimum viable product includes three user-facing features:
 
 1. **Simple File Storage:** Upload/download/remove files
 2. **Note Management:** Add/update/remove text notes

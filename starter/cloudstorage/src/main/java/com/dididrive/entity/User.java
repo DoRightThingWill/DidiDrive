@@ -1,4 +1,4 @@
-package com.superdrive.entity;
+package com.dididrive.entity;
 
 public class User {
     private Integer userid;

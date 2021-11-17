@@ -1,7 +1,7 @@
-package com.superdrive.mapper;
+package com.dididrive.mapper;
 
 
-import com.superdrive.entity.User;
+import com.dididrive.entity.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
